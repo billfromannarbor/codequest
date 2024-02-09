@@ -1,22 +1,10 @@
 //'use client'
 
 import Image from "next/image";
-//import 'codemirror/lib/codemirror.css'
 import { useEffect } from 'react'
-//const codeMirrorRef = useRef()
-
-
-
-// useEffect(() => {
-//     require('codemirror/mode/markdown/markdown')
-//     const CodeMirror = require('codemirror')
-//     const instance = CodeMirror.fromTextArea(codeMirrorRef.current, {
-//         lineNumbers: false,
-//         lineWrapping: true,
-//         mode: "text/x-markdown"
-//     })
-// }, [])
-
+import { HintAndSolution } from "./hintandsolution";
+import { Answer } from "./answer";
+import { Question } from "./question";
 
 export default function Home() {
   return (
@@ -25,26 +13,12 @@ export default function Home() {
 			Welcome to CodeQuest!
 			</p>
 			<Image src="/cute-blue-dragon.png" alt="cute blue dragon" width={100} height={100}/>
-				<p className="">
-					To Enter this website, you’ll need to go through the main gate.
-				</p>
-				<p className="">
-					The main gate is locked, but as a developer, you have access to the object maingatelock, which has a method you need: insertKey.
-				</p>
-				<p className="">
-					To open the gate, insert a string with the value “Blue” into the main gate lock.
-				</p>
-				<p className="">
-					Good luck on your Code adventure!
-				</p>
-				
+			<Question/>
 				<video id="frontgate-animation" src="/OpenGardenGate.mp4" >
-				
 				</video>
-				<section>
-        			<textarea></textarea>
-    			</section>
-				<button className="" type="button" id="btn-run-code">Run Code</button>
+				<Answer/>
+				<HintAndSolution/>
+				
 				<div id="javascript-errors" className="alert alert-success" role="alert"></div>
     </main>
   );
