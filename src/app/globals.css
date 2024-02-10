@@ -4,15 +4,15 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 81, 153, 145;
+  --background-end-rgb: 191, 218, 215;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 81, 153, 145;
+    --background-end-rgb: 191, 218, 215;
   }
 }
 
@@ -24,6 +24,19 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+button {
+  color:cadetblue;
+  background: rgb(200,199,333);
+  border-radius: 5px;
+  border: 2px solid #04AA6D;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+  color: rgb(200,199,333);
+  background: cadetblue;
 }
 
 @layer utilities {
