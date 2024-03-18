@@ -49,18 +49,18 @@ function runCodeClicked() {
   var result = attemptToUnlockTheDoor(codeToUnlockTheDoor);
   console.log(result);
   //todo: Put errors here for the user
-  document.getElementById("javascript-errors").innerHTML = result;
+  //document.getElementById("javascript-errors").innerHTML = result;
   
   if ( result == true)
   {
     //Open the gate
     var frontGateAnimation = document.getElementById("frontgate-animation"); 
-    if(frontGateAnimation!=null) 
-      frontGateAnimation.play();
+    //if(frontGateAnimation!=null) 
+      //frontGateAnimation.play();
   }
   else {
     //Todo:  Fill this with three or more answers that come at random
-    document.getElementById("javascript-errors").innerHTML = "Your code failed to open the door, please try again"
+    //document.getElementById("javascript-errors").innerHTML = "Your code failed to open the door, please try again"
   }
 }
 
