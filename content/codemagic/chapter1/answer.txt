@@ -1,0 +1,1 @@
+Copy this code into the object window and press the Open button: TrunkLock.InsertKey(“Blue”)
